@@ -159,6 +159,23 @@ document.addEventListener('DOMContentLoaded', function() {
             }, 600);
         });
     });
+
+    // Recruitment process timeline animation
+    const processSteps = document.querySelectorAll('.process-step');
+    const processObserver = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+            }
+        });
+    }, {
+        threshold: 0.2,
+        rootMargin: '0px 0px -50px 0px'
+    });
+
+    processSteps.forEach(step => {
+        processObserver.observe(step);
+    });
 });
 
 // Add CSS for ripple effect
