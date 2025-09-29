@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Industry News - Darmor Partners</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/png" href="images/Darmor-Partners-B7.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Top Header -->
+    <div class="top-header">
+        <div class="top-header-content">
+            <div class="top-header-left">
+                <!-- Empty for now, can add contact info later -->
+            </div>
+            <div class="top-header-right">
+                <button class="talent-network-btn">Join Our Talent Network</button>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/darmorpartners" target="_blank" class="social-icon facebook">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="https://twitter.com/darmorpartners" target="_blank" class="social-icon twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/company/darmor-partners" target="_blank" class="social-icon linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-brand">
+                <img src="images/Darmor-Partners-B1 copy (1).png" alt="Darmor Partners" class="logo-img">
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="practice-groups.html" class="nav-link">Practice Groups</a>
+                <a href="industry-news.html" class="nav-link active">Industry News</a>
+                <a href="#" class="nav-link">Contact Us</a>
+                <a href="#" class="nav-link">Find a Job</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="news-hero">
+        <div class="hero-content">
+            <h1>Industry News</h1>
+            <p>Stay informed with the latest insights, trends, and developments in recruitment, employment, and the economy.</p>
+        </div>
+    </section>
+
+    <!-- News Sections -->
+    <section class="news-sections">
+        <div class="container">
+            <div class="news-grid">
+                <!-- Top Row -->
+                <div class="news-row">
+                    <!-- Career Insights & Tips Column -->
+                    <div class="news-column">
+                        <div class="column-header">
+                            <h2><i class="fas fa-lightbulb"></i> Career Insights & Tips</h2>
+                            <p>Expert advice and strategies for career advancement and professional development</p>
+                        </div>
+                    <div class="column-articles" id="career-articles">
+                        <!-- RSS feed articles will be loaded here -->
+                        <div class="loading-message">Loading career insights...</div>
+                    </div>
+                    </div>
+
+                    <!-- Employment News Column -->
+                    <div class="news-column">
+                        <div class="column-header">
+                            <h2><i class="fas fa-briefcase"></i> Employment News</h2>
+                            <p>Latest updates on job market trends, hiring practices, and employment opportunities</p>
+                        </div>
+                        <div class="column-articles" id="employment-articles">
+                            <!-- BLS RSS feed articles will be loaded here -->
+                            <div class="loading-message">Loading employment news...</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Bottom Row -->
+                <div class="news-row">
+                    <!-- Economy Column -->
+                    <div class="news-column">
+                        <div class="column-header">
+                            <h2><i class="fas fa-chart-line"></i> Economy</h2>
+                            <p>Economic insights and analysis affecting the job market and business landscape</p>
+                        </div>
+                        <div class="column-articles">
+                            <article class="article-card">
+                                <div class="article-image">
+                                    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=250&fit=crop" alt="Economic Outlook">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="category">Economic Outlook</span>
+                                        <span class="date">December 13, 2024</span>
+                                    </div>
+                                    <h3>Economic Indicators: What They Mean for Your Career</h3>
+                                    <p>Understanding key economic metrics and how they impact job opportunities and career decisions.</p>
+                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                            <article class="article-card">
+                                <div class="article-image">
+                                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Market Analysis">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="category">Market Analysis</span>
+                                        <span class="date">December 8, 2024</span>
+                                    </div>
+                                    <h3>Industry Growth Patterns: Where the Opportunities Are</h3>
+                                    <p>Analyzing which industries are expanding and creating the most job opportunities.</p>
+                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                            <article class="article-card">
+                                <div class="article-image">
+                                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop" alt="Business Trends">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="category">Business Trends</span>
+                                        <span class="date">December 6, 2024</span>
+                                    </div>
+                                    <h3>Corporate Investment Trends: Impact on Employment</h3>
+                                    <p>How corporate spending and investment decisions affect hiring and job creation.</p>
+                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+
+                    <!-- US Labor News Column -->
+                    <div class="news-column">
+                        <div class="column-header">
+                            <h2><i class="fas fa-users"></i> US Labor News</h2>
+                            <p>Latest updates on labor market statistics, policy changes, and workforce developments</p>
+                        </div>
+                        <div class="column-articles">
+                            <article class="article-card">
+                                <div class="article-image">
+                                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=250&fit=crop" alt="Labor Statistics">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="category">Labor Statistics</span>
+                                        <span class="date">December 16, 2024</span>
+                                    </div>
+                                    <h3>December 2024 Employment Report: Key Takeaways</h3>
+                                    <p>Analysis of the latest Bureau of Labor Statistics report and what it means for job seekers.</p>
+                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                            <article class="article-card">
+                                <div class="article-image">
+                                    <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=400&h=250&fit=crop" alt="Policy Changes">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="category">Policy Changes</span>
+                                        <span class="date">December 7, 2024</span>
+                                    </div>
+                                    <h3>New Labor Regulations: What Employers Need to Know</h3>
+                                    <p>Recent changes in employment law and their implications for both employers and employees.</p>
+                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                            <article class="article-card">
+                                <div class="article-image">
+                                    <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=250&fit=crop" alt="Workforce Development">
+                                </div>
+                                <div class="article-content">
+                                    <div class="article-meta">
+                                        <span class="category">Workforce Development</span>
+                                        <span class="date">December 5, 2024</span>
+                                    </div>
+                                    <h3>Skills Gap Analysis: Addressing Workforce Challenges</h3>
+                                    <p>Examining the skills gap in the US labor market and strategies for workforce development.</p>
+                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Signup -->
+    <section class="newsletter-section">
+        <div class="container">
+            <div class="newsletter-content">
+                <h2>Stay Updated</h2>
+                <p>Get the latest industry news and insights delivered to your inbox weekly.</p>
+                <form class="newsletter-form" action="https://formspree.io/f/mvgwkkyg" method="POST">
+                    <input type="email" name="email" placeholder="Enter your email address" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <h2>Ready to Find Your Next Hire?</h2>
+            <p>Let's discuss how we can help you find the right talent or your next career opportunity.</p>
+            <div class="cta-buttons">
+                <a href="index.html#contact" class="cta-button">Get in Touch</a>
+                <a href="#" class="cta-button secondary">View Open Positions</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="images/Darmor-Partners-B1 copy (1).png" alt="Darmor Partners" class="footer-logo-img">
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Company</h4>
+                        <ul>
+                            <li><a href="about.html">About Us</a></li>
+                            <li><a href="practice-groups.html">Practice Groups</a></li>
+                            <li><a href="industry-news.html">Industry News</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Services</h4>
+                        <ul>
+                            <li><a href="#">Contract Staffing</a></li>
+                            <li><a href="#">Direct Hire</a></li>
+                            <li><a href="#">Executive Search</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li><a href="#">Career Resources</a></li>
+                            <li><a href="#">Interview Tips</a></li>
+                            <li><a href="#">Market Insights</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Darmor Partners. All rights reserved.</p>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/darmorpartners" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://twitter.com/darmorpartners" target="_blank"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/darmor-partners" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
