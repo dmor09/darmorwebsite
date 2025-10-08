@@ -1317,68 +1317,182 @@ body {
     line-height: 1.6;
 }
 
-/* Contact Information Section */
-.contact-info-section {
+/* Contact Form Section */
+.contact-form-section {
     padding: 80px 0;
     background: #f8fafc;
 }
 
-.contact-info-content {
-    max-width: 800px;
-    margin: 0 auto;
-    text-align: center;
+.contact-form-grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 60px;
+    align-items: start;
 }
 
-.contact-info-content h2 {
-    color: #1f70c1;
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    font-weight: 700;
+.map-column {
+    order: 1;
 }
 
-.business-info-card {
-    background: white;
-    padding: 40px;
+.small-map-container {
     border-radius: 12px;
+    overflow: hidden;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-.info-item {
-    display: flex;
-    align-items: flex-start;
-    gap: 20px;
+.contact-form-column {
+    order: 2;
+}
+
+.contact-form-column h2 {
+    color: #1f70c1;
+    font-size: 1.8rem;
     margin-bottom: 30px;
-    text-align: left;
+    font-weight: 600;
+    line-height: 1.4;
 }
 
-.info-item:last-child {
-    margin-bottom: 0;
+.contact-details {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
 }
 
-.info-icon {
-    width: 50px;
-    height: 50px;
+.contact-detail {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #6b7280;
+    font-size: 1rem;
+}
+
+.contact-detail i {
+    color: #1f70c1;
+    font-size: 1.1rem;
+}
+
+.contact-form {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #374151;
+    font-weight: 600;
+    margin-bottom: 8px;
+    font-size: 0.95rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 2px solid #e5e7eb;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #1f70c1;
+    box-shadow: 0 0 0 3px rgba(31, 112, 193, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+.file-upload {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.file-upload input[type="file"] {
+    display: none;
+}
+
+.file-upload-btn {
+    background: #1f70c1;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+.file-upload-btn:hover {
+    background: #023368;
+}
+
+.file-name {
+    color: #6b7280;
+    font-size: 0.9rem;
+}
+
+.submit-btn {
     background: linear-gradient(135deg, #1f70c1, #023368);
+    color: white;
+    padding: 15px 40px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 10px;
+}
+
+.submit-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(31, 112, 193, 0.3);
+}
+
+.contact-form-column .social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.contact-form-column .social-icon {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 1.2rem;
-    flex-shrink: 0;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
 }
 
-.info-content h3 {
-    color: #1f70c1;
-    font-size: 1.2rem;
-    margin-bottom: 8px;
-    font-weight: 600;
+.contact-form-column .social-icon.twitter {
+    background: #1da1f2;
 }
 
-.info-content p {
-    color: #6b7280;
-    line-height: 1.6;
-    margin: 0;
+.contact-form-column .social-icon.facebook {
+    background: #1877f2;
+}
+
+.contact-form-column .social-icon.linkedin {
+    background: #0077b5;
+}
+
+.contact-form-column .social-icon:hover {
+    transform: translateY(-2px);
 }
 
 .contact-column {
@@ -1894,8 +2008,18 @@ body {
         height: 30px;
     }
     
-    .contact-info-content h2 {
-        font-size: 2rem;
+    .contact-form-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .contact-form-column h2 {
+        font-size: 1.5rem;
+    }
+    
+    .contact-details {
+        flex-direction: column;
+        gap: 15px;
     }
 }
 
