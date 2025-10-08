@@ -1317,16 +1317,22 @@ body {
     line-height: 1.6;
 }
 
-.map-section {
+.map-contact-section {
     padding: 80px 0;
     background: white;
 }
 
-.map-section h2 {
-    text-align: center;
+.map-contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: start;
+}
+
+.map-column h2 {
     color: #1f70c1;
     font-size: 2.5rem;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     font-weight: 700;
 }
 
@@ -1336,16 +1342,58 @@ body {
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
 
-.contact-form-section {
-    padding: 80px 0;
-    background: #f8fafc;
+.contact-column {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.business-hours h2 {
+    color: #1f70c1;
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.hours-card {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hours-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #1f70c1, #023368);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.3rem;
+    flex-shrink: 0;
+}
+
+.hours-content h3 {
+    color: #1f70c1;
+    font-size: 1.3rem;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+.hours-content p {
+    color: #6b7280;
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
 
 .form-container {
-    max-width: 800px;
-    margin: 0 auto;
     background: white;
-    padding: 50px;
+    padding: 40px;
     border-radius: 12px;
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
 }
@@ -1866,6 +1914,26 @@ body {
     .social-icon {
         width: 30px;
         height: 30px;
+    }
+    
+    .map-contact-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .map-column h2,
+    .business-hours h2,
+    .form-container h2 {
+        font-size: 2rem;
+    }
+    
+    .hours-card {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .form-container {
+        padding: 30px 20px;
     }
 }
 
