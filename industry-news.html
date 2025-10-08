@@ -49,148 +49,55 @@
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="news-hero">
+    <!-- Modern Hero Section -->
+    <section class="modern-news-hero">
+        <div class="hero-background">
+            <div class="hero-overlay"></div>
+        </div>
         <div class="hero-content">
-            <h1>Industry News</h1>
-            <p>Stay informed with the latest insights, trends, and developments in recruitment, employment, and the economy.</p>
+            <div class="hero-badge">
+                <i class="fas fa-newspaper"></i>
+                <span>Latest Updates</span>
+            </div>
+            <h1 class="hero-title">Industry Intelligence</h1>
+            <p class="hero-subtitle">Stay ahead with cutting-edge insights, market trends, and strategic analysis shaping the future of talent acquisition</p>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <span class="stat-number">50+</span>
+                    <span class="stat-label">Articles Weekly</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">4</span>
+                    <span class="stat-label">Expert Categories</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Market Monitoring</span>
+                </div>
+            </div>
         </div>
     </section>
 
-    <!-- News Sections -->
-    <section class="news-sections">
+    <!-- Featured Article -->
+    <section class="featured-article">
         <div class="container">
-            <div class="news-grid">
-                <!-- Top Row -->
-                <div class="news-row">
-                    <!-- Career Insights & Tips Column -->
-                    <div class="news-column">
-                        <div class="column-header">
-                            <h2><i class="fas fa-lightbulb"></i> Career Insights & Tips</h2>
-                            <p>Expert advice and strategies for career advancement and professional development</p>
-                        </div>
-                    <div class="column-articles" id="career-articles">
-                        <!-- RSS feed articles will be loaded here -->
-                        <div class="loading-message">Loading career insights...</div>
-                    </div>
-                    </div>
-
-                    <!-- Employment News Column -->
-                    <div class="news-column">
-                        <div class="column-header">
-                            <h2><i class="fas fa-briefcase"></i> Employment News</h2>
-                            <p>Latest updates on job market trends, hiring practices, and employment opportunities</p>
-                        </div>
-                        <div class="column-articles" id="employment-articles">
-                            <!-- BLS RSS feed articles will be loaded here -->
-                            <div class="loading-message">Loading employment news...</div>
-                        </div>
-                    </div>
+            <div class="featured-content">
+                <div class="featured-image">
+                    <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&h=500&fit=crop" alt="AI in Recruitment">
+                    <div class="featured-badge">Featured</div>
                 </div>
-
-                <!-- Bottom Row -->
-                <div class="news-row">
-                    <!-- Economy Column -->
-                    <div class="news-column">
-                        <div class="column-header">
-                            <h2><i class="fas fa-chart-line"></i> Economy</h2>
-                            <p>Economic insights and analysis affecting the job market and business landscape</p>
-                        </div>
-                        <div class="column-articles">
-                            <article class="article-card">
-                                <div class="article-image">
-                                    <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=400&h=250&fit=crop" alt="Economic Outlook">
-                                </div>
-                                <div class="article-content">
-                                    <div class="article-meta">
-                                        <span class="category">Economic Outlook</span>
-                                        <span class="date">December 13, 2024</span>
-                                    </div>
-                                    <h3>Economic Indicators: What They Mean for Your Career</h3>
-                                    <p>Understanding key economic metrics and how they impact job opportunities and career decisions.</p>
-                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </article>
-                            <article class="article-card">
-                                <div class="article-image">
-                                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop" alt="Market Analysis">
-                                </div>
-                                <div class="article-content">
-                                    <div class="article-meta">
-                                        <span class="category">Market Analysis</span>
-                                        <span class="date">December 8, 2024</span>
-                                    </div>
-                                    <h3>Industry Growth Patterns: Where the Opportunities Are</h3>
-                                    <p>Analyzing which industries are expanding and creating the most job opportunities.</p>
-                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </article>
-                            <article class="article-card">
-                                <div class="article-image">
-                                    <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop" alt="Business Trends">
-                                </div>
-                                <div class="article-content">
-                                    <div class="article-meta">
-                                        <span class="category">Business Trends</span>
-                                        <span class="date">December 6, 2024</span>
-                                    </div>
-                                    <h3>Corporate Investment Trends: Impact on Employment</h3>
-                                    <p>How corporate spending and investment decisions affect hiring and job creation.</p>
-                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </article>
-                        </div>
+                <div class="featured-text">
+                    <div class="article-meta">
+                        <span class="category">Technology Trends</span>
+                        <span class="date">December 18, 2024</span>
                     </div>
-
-                    <!-- US Labor News Column -->
-                    <div class="news-column">
-                        <div class="column-header">
-                            <h2><i class="fas fa-users"></i> US Labor News</h2>
-                            <p>Latest updates on labor market statistics, policy changes, and workforce developments</p>
-                        </div>
-                        <div class="column-articles">
-                            <article class="article-card">
-                                <div class="article-image">
-                                    <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=400&h=250&fit=crop" alt="Labor Statistics">
-                                </div>
-                                <div class="article-content">
-                                    <div class="article-meta">
-                                        <span class="category">Labor Statistics</span>
-                                        <span class="date">December 16, 2024</span>
-                                    </div>
-                                    <h3>December 2024 Employment Report: Key Takeaways</h3>
-                                    <p>Analysis of the latest Bureau of Labor Statistics report and what it means for job seekers.</p>
-                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </article>
-                            <article class="article-card">
-                                <div class="article-image">
-                                    <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=400&h=250&fit=crop" alt="Policy Changes">
-                                </div>
-                                <div class="article-content">
-                                    <div class="article-meta">
-                                        <span class="category">Policy Changes</span>
-                                        <span class="date">December 7, 2024</span>
-                                    </div>
-                                    <h3>New Labor Regulations: What Employers Need to Know</h3>
-                                    <p>Recent changes in employment law and their implications for both employers and employees.</p>
-                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </article>
-                            <article class="article-card">
-                                <div class="article-image">
-                                    <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=400&h=250&fit=crop" alt="Workforce Development">
-                                </div>
-                                <div class="article-content">
-                                    <div class="article-meta">
-                                        <span class="category">Workforce Development</span>
-                                        <span class="date">December 5, 2024</span>
-                                    </div>
-                                    <h3>Skills Gap Analysis: Addressing Workforce Challenges</h3>
-                                    <p>Examining the skills gap in the US labor market and strategies for workforce development.</p>
-                                    <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a>
-                                </div>
-                            </article>
+                    <h2>AI Revolution in Recruitment: How Machine Learning is Transforming Talent Acquisition</h2>
+                    <p>Explore how artificial intelligence is reshaping the recruitment landscape, from automated candidate screening to predictive analytics that forecast hiring success. Discover the tools and strategies that forward-thinking companies are using to gain competitive advantages in talent acquisition.</p>
+                    <div class="featured-actions">
+                        <a href="#" class="read-full-btn">Read Full Article <i class="fas fa-arrow-right"></i></a>
+                        <div class="article-stats">
+                            <span><i class="fas fa-eye"></i> 2.4k views</span>
+                            <span><i class="fas fa-share"></i> 156 shares</span>
                         </div>
                     </div>
                 </div>
@@ -198,15 +105,199 @@
         </div>
     </section>
 
-    <!-- Newsletter Signup -->
-    <section class="newsletter-section">
+    <!-- News Categories Grid -->
+    <section class="news-categories">
+        <div class="container">
+            <div class="section-header">
+                <h2>Expert Analysis & Insights</h2>
+                <p>Curated content from industry leaders and market analysts</p>
+            </div>
+            
+            <div class="categories-grid">
+                <!-- Career Development -->
+                <div class="category-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-rocket"></i>
+                        </div>
+                        <h3>Career Development</h3>
+                        <p>Strategic career advancement and professional growth insights</p>
+                    </div>
+                    <div class="category-articles">
+                        <article class="mini-article">
+                            <div class="mini-image">
+                                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=100&fit=crop" alt="Career Growth">
+                            </div>
+                            <div class="mini-content">
+                                <h4>5 Essential Skills for Career Advancement in 2025</h4>
+                                <span class="mini-date">Dec 15, 2024</span>
+                            </div>
+                        </article>
+                        <article class="mini-article">
+                            <div class="mini-image">
+                                <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=150&h=100&fit=crop" alt="Interview Skills">
+                            </div>
+                            <div class="mini-content">
+                                <h4>Mastering Virtual Interviews: Complete Guide</h4>
+                                <span class="mini-date">Dec 12, 2024</span>
+                            </div>
+                        </article>
+                        <article class="mini-article">
+                            <div class="mini-image">
+                                <img src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=150&h=100&fit=crop" alt="Networking">
+                            </div>
+                            <div class="mini-content">
+                                <h4>Building Professional Networks That Work</h4>
+                                <span class="mini-date">Dec 10, 2024</span>
+                            </div>
+                        </article>
+                    </div>
+                    <a href="#" class="category-link">View All Articles <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Market Trends -->
+                <div class="category-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-chart-line"></i>
+                        </div>
+                        <h3>Market Trends</h3>
+                        <p>Employment market analysis and industry growth patterns</p>
+                    </div>
+                    <div class="category-articles">
+                        <article class="mini-article">
+                            <div class="mini-image">
+                                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=150&h=100&fit=crop" alt="Employment Trends">
+                            </div>
+                            <div class="mini-content">
+                                <h4>2025 Employment Outlook: Key Trends</h4>
+                                <span class="mini-date">Dec 15, 2024</span>
+                            </div>
+                        </article>
+                        <article class="mini-article">
+                            <div class="mini-image">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=150&h=100&fit=crop" alt="Tech Hiring">
+                            </div>
+                            <div class="mini-content">
+                                <h4>Tech Sector Hiring: Q4 2024 Analysis</h4>
+                                <span class="mini-date">Dec 12, 2024</span>
+                            </div>
+                        </article>
+                        <article class="mini-article">
+                            <div class="mini-image">
+                                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=150&h=100&fit=crop" alt="Remote Work">
+                            </div>
+                            <div class="mini-content">
+                                <h4>Remote Work Evolution: New Normal</h4>
+                                <span class="mini-date">Dec 10, 2024</span>
+                            </div>
+                        </article>
+                    </div>
+                    <a href="#" class="category-link">View All Articles <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Economic Insights -->
+                <div class="category-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-dollar-sign"></i>
+                        </div>
+                        <h3>Economic Insights</h3>
+                        <p>Economic indicators and their impact on employment</p>
+                    </div>
+                    <div class="category-articles">
+                        <article class="mini-article">
+                            <div class="mini-image">
+                                <img src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=150&h=100&fit=crop" alt="Economic Outlook">
+                            </div>
+                            <div class="mini-content">
+                                <h4>Economic Indicators: Career Impact</h4>
+                                <span class="mini-date">Dec 13, 2024</span>
+                            </div>
+                        </article>
+                        <article class="mini-article">
+                            <div class="mini-image">
+                                <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=150&h=100&fit=crop" alt="Industry Growth">
+                            </div>
+                            <div class="mini-content">
+                                <h4>Industry Growth: Where Opportunities Are</h4>
+                                <span class="mini-date">Dec 8, 2024</span>
+                            </div>
+                        </article>
+                        <article class="mini-article">
+                            <div class="mini-image">
+                                <img src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=150&h=100&fit=crop" alt="Investment Trends">
+                            </div>
+                            <div class="mini-content">
+                                <h4>Corporate Investment: Employment Impact</h4>
+                                <span class="mini-date">Dec 6, 2024</span>
+                            </div>
+                        </article>
+                    </div>
+                    <a href="#" class="category-link">View All Articles <i class="fas fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Labor Statistics -->
+                <div class="category-card">
+                    <div class="category-header">
+                        <div class="category-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3>Labor Statistics</h3>
+                        <p>Latest workforce data and employment reports</p>
+                    </div>
+                    <div class="category-articles">
+                        <article class="mini-article">
+                            <div class="mini-image">
+                                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=150&h=100&fit=crop" alt="Employment Report">
+                            </div>
+                            <div class="mini-content">
+                                <h4>December 2024 Employment Report</h4>
+                                <span class="mini-date">Dec 16, 2024</span>
+                            </div>
+                        </article>
+                        <article class="mini-article">
+                            <div class="mini-image">
+                                <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?w=150&h=100&fit=crop" alt="Labor Regulations">
+                            </div>
+                            <div class="mini-content">
+                                <h4>New Labor Regulations: Employer Guide</h4>
+                                <span class="mini-date">Dec 7, 2024</span>
+                            </div>
+                        </article>
+                        <article class="mini-article">
+                            <div class="mini-image">
+                                <img src="https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=150&h=100&fit=crop" alt="Skills Gap">
+                            </div>
+                            <div class="mini-content">
+                                <h4>Skills Gap Analysis: Workforce Challenges</h4>
+                                <span class="mini-date">Dec 5, 2024</span>
+                            </div>
+                        </article>
+                    </div>
+                    <a href="#" class="category-link">View All Articles <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="modern-newsletter">
         <div class="container">
             <div class="newsletter-content">
-                <h2>Stay Updated</h2>
-                <p>Get the latest industry news and insights delivered to your inbox weekly.</p>
+                <div class="newsletter-text">
+                    <h2>Stay Ahead of the Curve</h2>
+                    <p>Get weekly insights delivered directly to your inbox. Join 10,000+ professionals who trust our analysis.</p>
+                </div>
                 <form class="newsletter-form" action="https://formspree.io/f/mvgwkkyg" method="POST">
-                    <input type="email" name="email" placeholder="Enter your email address" required>
-                    <button type="submit">Subscribe</button>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Enter your email address" required>
+                        <button type="submit">
+                            <span>Subscribe</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </div>
+                    <p class="form-note">No spam, unsubscribe anytime. We respect your privacy.</p>
                 </form>
             </div>
         </div>
