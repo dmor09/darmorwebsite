@@ -1329,6 +1329,14 @@ body {
     align-items: start;
 }
 
+.map-column {
+    order: 1;
+}
+
+.contact-column {
+    order: 2;
+}
+
 .map-column h2 {
     color: #1f70c1;
     font-size: 2.5rem;
@@ -1406,33 +1414,15 @@ body {
     font-weight: 700;
 }
 
-.contact-form {
+.form-container .mailing-form {
     display: flex;
     flex-direction: column;
-    gap: 25px;
+    gap: 15px;
 }
 
-.form-row {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 25px;
-}
-
-.form-group {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group label {
-    color: #374151;
-    font-weight: 600;
-    margin-bottom: 8px;
-    font-size: 0.95rem;
-}
-
-.form-group input,
-.form-group select,
-.form-group textarea {
+.form-container .mailing-form input,
+.form-container .mailing-form select,
+.form-container .mailing-form textarea {
     padding: 15px;
     border: 2px solid #e5e7eb;
     border-radius: 8px;
@@ -1441,34 +1431,33 @@ body {
     font-family: inherit;
 }
 
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus {
+.form-container .mailing-form input:focus,
+.form-container .mailing-form select:focus,
+.form-container .mailing-form textarea:focus {
     outline: none;
     border-color: #1f70c1;
     box-shadow: 0 0 0 3px rgba(31, 112, 193, 0.1);
 }
 
-.form-group textarea {
+.form-container .mailing-form textarea {
     resize: vertical;
-    min-height: 120px;
+    min-height: 100px;
 }
 
-.submit-btn {
+.form-container .mailing-form button {
     background: linear-gradient(135deg, #1f70c1, #023368);
     color: white;
-    padding: 15px 40px;
+    padding: 15px 30px;
     border: none;
     border-radius: 8px;
     font-size: 1.1rem;
     font-weight: 600;
     cursor: pointer;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-    align-self: center;
     margin-top: 10px;
 }
 
-.submit-btn:hover {
+.form-container .mailing-form button:hover {
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(31, 112, 193, 0.3);
 }

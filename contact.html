@@ -130,47 +130,21 @@
                     <!-- Contact Form -->
                     <div class="form-container">
                         <h2>Send Us a Message</h2>
-                        <form class="contact-form" action="https://formspree.io/f/mvgwkkyg" method="POST">
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="name">Full Name *</label>
-                                    <input type="text" id="name" name="name" required>
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email Address *</label>
-                                    <input type="email" id="email" name="email" required>
-                                </div>
-                            </div>
-                            
-                            <div class="form-row">
-                                <div class="form-group">
-                                    <label for="phone">Phone Number</label>
-                                    <input type="tel" id="phone" name="phone">
-                                </div>
-                                <div class="form-group">
-                                    <label for="company">Company</label>
-                                    <input type="text" id="company" name="company">
-                                </div>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="subject">Subject *</label>
-                                <select id="subject" name="subject" required>
-                                    <option value="">Select a subject</option>
-                                    <option value="general">General Inquiry</option>
-                                    <option value="recruitment">Recruitment Services</option>
-                                    <option value="job-seeker">Job Seeker</option>
-                                    <option value="partnership">Partnership Opportunity</option>
-                                    <option value="other">Other</option>
-                                </select>
-                            </div>
-                            
-                            <div class="form-group">
-                                <label for="message">Message *</label>
-                                <textarea id="message" name="message" rows="6" required placeholder="Tell us how we can help you..."></textarea>
-                            </div>
-                            
-                            <button type="submit" class="submit-btn">Send Message</button>
+                        <form class="mailing-form" action="https://formspree.io/f/mvgwkkyg" method="POST">
+                            <input type="text" name="name" placeholder="Your Full Name" required>
+                            <input type="email" name="email" placeholder="Your E-mail Address" required>
+                            <input type="tel" name="phone" placeholder="Phone Number (Optional)">
+                            <input type="text" name="company" placeholder="Company (Optional)">
+                            <select name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="recruitment">Recruitment Services</option>
+                                <option value="job-seeker">Job Seeker</option>
+                                <option value="partnership">Partnership Opportunity</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <textarea name="message" placeholder="Tell us how we can help you..." required rows="4"></textarea>
+                            <button type="submit">Send Message</button>
                         </form>
                     </div>
                 </div>
@@ -194,42 +168,44 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="images/Darmor-Partners-B1 copy (1).png" alt="Darmor Partners" class="footer-logo-img">
+                <div class="footer-column">
+                    <div class="logo">
+                        <img src="images/Darmor-Partners-B1 (1).svg" alt="Darmor Partners" class="footer-logo">
+                    </div>
+                    <p>Darmor Partners is a leading recruitment firm specializing in contingent staffing solutions and direct hire placements. Regardless if you are a professional looking for your next opportunity or an employer looking for specialized recruitment services, contact us today to see how we can help.</p>
+                    <p>Darmor Partners is an equal opportunity employer</p>
+                    <a href="#" class="privacy-link">Privacy Policy</a>
                 </div>
-                <div class="footer-links">
-                    <div class="footer-column">
-                        <h4>Company</h4>
-                        <ul>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="practice-groups.html">Practice Groups</a></li>
-                            <li><a href="industry-news.html">Industry News</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Services</h4>
-                        <ul>
-                            <li><a href="#">Contract Staffing</a></li>
-                            <li><a href="#">Direct Hire</a></li>
-                            <li><a href="#">Executive Search</a></li>
-                        </ul>
-                    </div>
-                    <div class="footer-column">
-                        <h4>Resources</h4>
-                        <ul>
-                            <li><a href="#">Career Resources</a></li>
-                            <li><a href="#">Interview Tips</a></li>
-                            <li><a href="#">Market Insights</a></li>
-                        </ul>
+                
+                <div class="footer-column">
+                    <h4>Pages</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="practice-groups.html">Practice Groups</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="#">Find a Job</a></li>
+                        <li><a href="#">Submit Your Resume</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/darmorpartners" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.linkedin.com/company/darmor-partners" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://twitter.com/darmorpartners" target="_blank"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Darmor Partners. All rights reserved.</p>
-                <div class="social-links">
-                    <a href="https://www.facebook.com/darmorpartners" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://twitter.com/darmorpartners" target="_blank"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/company/darmor-partners" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                
+                <div class="footer-column">
+                    <h4>Join Our Mailing List</h4>
+                    <form class="mailing-form" action="https://formspree.io/f/mvgwkkyg" method="POST">
+                        <input type="text" name="name" placeholder="Your Full Name" required>
+                        <input type="email" name="email" placeholder="Your E-mail Address" required>
+                        <button type="submit">Get in Touch</button>
+                    </form>
+                    <div class="contact-info">
+                        <p>For all inquiries, please reach us at:</p>
+                        <p>Phone: 646-229-6278</p>
+                        <p>Email: info@darmorpartners.com</p>
+                    </div>
                 </div>
             </div>
         </div>
