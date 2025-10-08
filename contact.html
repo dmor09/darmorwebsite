@@ -57,84 +57,153 @@
         </div>
     </section>
 
-    <!-- Contact Form Section -->
-    <section class="contact-form-section">
+    <!-- Cool Contact Section -->
+    <section class="cool-contact-section">
         <div class="container">
-            <div class="contact-form-grid">
-                <!-- Small Map Column -->
-                <div class="map-column">
-                    <div class="small-map-container">
-                        <iframe 
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.1234567890123!2d-73.9857!3d40.7589!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ1JzMyLjAiTiA3M8KwNTknMDguNSJX!5e0!3m2!1sen!2sus!4v1234567890123!5m2!1sen!2sus"
-                            width="100%" 
-                            height="300" 
-                            style="border:0;" 
-                            allowfullscreen="" 
-                            loading="lazy" 
-                            referrerpolicy="no-referrer-when-downgrade">
-                        </iframe>
+            <!-- Contact Cards Grid -->
+            <div class="contact-cards-grid">
+                <div class="contact-card cool-card">
+                    <div class="card-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h3>Visit Us</h3>
+                    <p>West 42nd Street & Lexington Avenue<br>New York, NY 10036</p>
+                    <div class="card-action">
+                        <a href="https://maps.google.com/?q=West+42nd+Street+Lexington+Avenue+New+York+NY" target="_blank" class="action-btn">
+                            <i class="fas fa-directions"></i> Get Directions
+                        </a>
                     </div>
                 </div>
                 
-                <!-- Contact Form Column -->
-                <div class="contact-form-column">
-                    <h2>Interested in one of our services? Fill out the form below and we'll be in touch.</h2>
-                    
-                    <div class="contact-details">
-                        <div class="contact-detail">
-                            <i class="fas fa-envelope"></i>
-                            <span>info@darmorpartners.com</span>
-                        </div>
-                        <div class="contact-detail">
-                            <i class="fas fa-phone"></i>
-                            <span>646-229-6278</span>
-                        </div>
+                <div class="contact-card cool-card">
+                    <div class="card-icon">
+                        <i class="fas fa-phone"></i>
                     </div>
-                    
-                    <form class="contact-form" action="https://formspree.io/f/mvgwkkyg" method="POST">
-                        <div class="form-group">
-                            <label for="name">Your Full Name</label>
-                            <input type="text" id="name" name="name" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="phone">Your Phone Number</label>
-                            <input type="tel" id="phone" name="phone" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="email">Your Email Address</label>
-                            <input type="email" id="email" name="email" required>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="message">Your Message Here</label>
-                            <textarea id="message" name="message" rows="4" required></textarea>
-                        </div>
-                        
-                        <div class="form-group">
-                            <label for="resume">Submit Resume:</label>
-                            <div class="file-upload">
-                                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
-                                <label for="resume" class="file-upload-btn">Choose File</label>
-                                <span class="file-name">No file chosen</span>
+                    <h3>Call Us</h3>
+                    <p>Speak directly with our team</p>
+                    <div class="card-action">
+                        <a href="tel:646-229-6278" class="action-btn">
+                            <i class="fas fa-phone"></i> 646-229-6278
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-card cool-card">
+                    <div class="card-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Us</h3>
+                    <p>Send us a message anytime</p>
+                    <div class="card-action">
+                        <a href="mailto:info@darmorpartners.com" class="action-btn">
+                            <i class="fas fa-envelope"></i> info@darmorpartners.com
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Interactive Contact Form -->
+            <div class="contact-form-container">
+                <div class="form-header">
+                    <h2>Let's Start a Conversation</h2>
+                    <p>Ready to find your next opportunity or hire top talent? We're here to help.</p>
+                </div>
+                
+                <div class="form-wrapper">
+                    <form class="cool-contact-form" action="https://formspree.io/f/mvgwkkyg" method="POST">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <input type="text" id="name" name="name" required>
+                                    <label for="name">Full Name</label>
+                                    <div class="input-line"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <input type="email" id="email" name="email" required>
+                                    <label for="email">Email Address</label>
+                                    <div class="input-line"></div>
+                                </div>
                             </div>
                         </div>
                         
-                        <button type="submit" class="submit-btn">Submit</button>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <input type="tel" id="phone" name="phone">
+                                    <label for="phone">Phone Number</label>
+                                    <div class="input-line"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <div class="input-wrapper">
+                                    <input type="text" id="company" name="company">
+                                    <label for="company">Company</label>
+                                    <div class="input-line"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="select-wrapper">
+                                <select id="service" name="service" required>
+                                    <option value="">Select Service</option>
+                                    <option value="recruitment">Recruitment Services</option>
+                                    <option value="job-seeker">Job Seeker</option>
+                                    <option value="consultation">Free Consultation</option>
+                                    <option value="partnership">Partnership</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <div class="select-line"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="textarea-wrapper">
+                                <textarea id="message" name="message" rows="4" required></textarea>
+                                <label for="message">Tell us about your needs</label>
+                                <div class="textarea-line"></div>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <div class="file-upload-wrapper">
+                                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx">
+                                <label for="resume" class="file-upload-label">
+                                    <i class="fas fa-cloud-upload-alt"></i>
+                                    <span>Upload Resume (Optional)</span>
+                                </label>
+                                <div class="file-info">PDF, DOC, DOCX up to 10MB</div>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">
+                            <span>Send Message</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
                     </form>
-                    
-                    <div class="social-icons">
-                        <a href="https://twitter.com/darmorpartners" target="_blank" class="social-icon twitter">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="https://www.facebook.com/darmorpartners" target="_blank" class="social-icon facebook">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/company/darmor-partners" target="_blank" class="social-icon linkedin">
-                            <i class="fab fa-linkedin-in"></i>
-                        </a>
-                    </div>
+                </div>
+            </div>
+            
+            <!-- Social Connect Section -->
+            <div class="social-connect">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/darmor-partners" target="_blank" class="social-link linkedin">
+                        <i class="fab fa-linkedin-in"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="https://twitter.com/darmorpartners" target="_blank" class="social-link twitter">
+                        <i class="fab fa-twitter"></i>
+                        <span>Twitter</span>
+                    </a>
+                    <a href="https://www.facebook.com/darmorpartners" target="_blank" class="social-link facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
                 </div>
             </div>
         </div>
