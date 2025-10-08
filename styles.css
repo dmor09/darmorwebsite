@@ -19,22 +19,25 @@ body {
 
 /* Top Header */
 .top-header {
-    background: #1f70c1;
-    padding: 8px 0;
+    background: linear-gradient(135deg, #1f70c1 0%, #023368 100%);
+    padding: 12px 0;
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1000;
+    box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
 }
 
 .top-header-content {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
+    gap: 30px;
+    padding-right: 20px;
 }
 
 .top-header-left {
@@ -44,58 +47,70 @@ body {
 .top-header-right {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 5px;
+    margin-left: auto;
 }
 
 .talent-network-btn {
-    background: #023368;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
     color: white;
-    border: none;
-    padding: 8px 16px;
-    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 10px 20px;
+    border-radius: 25px;
     font-size: 0.9rem;
-    font-weight: 500;
+    font-weight: 600;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
 }
 
 .talent-network-btn:hover {
-    background: #1a5a8a;
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
 }
 
 .top-header .social-icons {
     display: flex;
-    gap: 8px;
+    gap: 5px;
 }
 
 .top-header .social-icon {
-    width: 32px;
-    height: 32px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .top-header .social-icon.facebook {
-    background: #1877f2;
+    background: rgba(24, 119, 242, 0.8);
     color: white;
 }
 
 .top-header .social-icon.twitter {
-    background: #1da1f2;
+    background: rgba(29, 161, 242, 0.8);
     color: white;
 }
 
 .top-header .social-icon.linkedin {
-    background: #0077b5;
+    background: rgba(0, 119, 181, 0.8);
     color: white;
 }
 
 .top-header .social-icon:hover {
-    opacity: 0.8;
+    transform: translateY(-3px) scale(1.1);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.top-header .social-icon i {
+    font-size: 1rem;
 }
 
 /* Navigation */
@@ -194,6 +209,27 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 1.4;
+}
+
 .cta-button {
     background-color: #1f70c1;
     color: white;
@@ -210,35 +246,70 @@ body {
     background-color: #1a5fa3;
 }
 
-/* Practice Groups Section */
+/* Practice Groups Section - Cool Redesign */
 .practice-groups {
-    background-color: #f8fafc;
-    padding: 80px 0;
+    padding: 100px 0;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+    overflow: hidden;
 }
 
-.section-title {
+.practice-groups::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23dee2e6" stroke-width="0.5" opacity="0.3"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
+    opacity: 0.1;
+}
+
+.practice-groups .section-title {
     text-align: center;
-    font-size: 36px;
+    font-size: 3rem;
     font-weight: 700;
-    color: #1f2937;
+    color: #1f70c1;
     margin-bottom: 60px;
+    position: relative;
+    z-index: 2;
+}
+
+.practice-groups .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, #1f70c1, #023368);
+    border-radius: 2px;
 }
 
 .practice-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 30px;
+    gap: 25px;
+    max-width: 1600px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+    align-items: stretch;
 }
 
 .practice-card {
-    background: white;
-    padding: 40px 30px;
-    border-radius: 12px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    position: relative;
+    background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+    border-radius: 20px;
+    padding: 0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
     overflow: hidden;
+    position: relative;
+    border: 1px solid rgba(31, 112, 193, 0.1);
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
 }
 
 .practice-card::before {
@@ -247,65 +318,165 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    height: 120px;
-    background: linear-gradient(135deg, #1f70c1, #1a5fa3);
-    opacity: 0.9;
+    height: 4px;
+    background: linear-gradient(90deg, #1f70c1, #023368);
 }
 
 .practice-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(31, 112, 193, 0.2);
+}
+
+.card-header {
+    background: linear-gradient(135deg, #1f70c1 0%, #023368 100%);
+    padding: 35px 35px 30px;
+    text-align: center;
+    position: relative;
 }
 
 .card-icon {
-    position: relative;
-    z-index: 2;
     width: 80px;
     height: 80px;
-    background: white;
+    background: rgba(255, 255, 255, 0.15);
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
     margin: 0 auto 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
 }
 
 .card-icon i {
-    font-size: 32px;
-    color: #1f70c1;
+    font-size: 2.2rem;
+    color: #FFF700;
+    transition: all 0.3s ease;
 }
 
-.practice-card h3 {
-    font-size: 24px;
-    font-weight: 700;
-    color: #1f2937;
-    margin-bottom: 15px;
-    position: relative;
-    z-index: 2;
+.practice-card:hover .card-icon {
+    transform: scale(1.1) rotate(5deg);
+    background: rgba(255, 255, 255, 0.25);
 }
 
-.practice-card p {
-    color: #6b7280;
-    line-height: 1.6;
-    position: relative;
-    z-index: 2;
+.practice-card:hover .card-icon i {
+    transform: scale(1.1);
+}
+
+.card-header h3 {
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin: 0;
+    line-height: 1.3;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.card-content {
+    padding: 35px 35px;
+    background: white;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .roles-list {
     list-style: none;
     padding: 0;
     margin: 0;
-    position: relative;
-    z-index: 2;
 }
 
 .roles-list li {
-    color: #6b7280;
-    line-height: 1.6;
-    margin-bottom: 8px;
-    padding-left: 0;
+    color: #495057;
+    font-size: 0.95rem;
+    font-weight: 500;
+    padding: 8px 0;
+    border-bottom: 1px solid #f1f3f4;
+    transition: all 0.3s ease;
     position: relative;
+    padding-left: 20px;
+}
+
+.roles-list li:last-child {
+    border-bottom: none;
+}
+
+.roles-list li::before {
+    content: '▶';
+    position: absolute;
+    left: 0;
+    color: #1f70c1;
+    font-size: 0.7rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.roles-list li:hover {
+    color: #1f70c1;
+    padding-left: 25px;
+}
+
+.roles-list li:hover::before {
+    transform: translateY(-50%) translateX(3px);
+    color: #023368;
+}
+
+/* Practice Groups Responsive Design */
+@media (max-width: 1200px) {
+    .practice-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+}
+
+@media (max-width: 768px) {
+    .practice-groups {
+        padding: 60px 0;
+    }
+    
+    .practice-groups .section-title {
+        font-size: 2.2rem;
+        margin-bottom: 40px;
+    }
+    
+    .practice-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding: 0 20px;
+    }
+    
+    .practice-card {
+        min-height: 350px;
+    }
+    
+    .card-header {
+        padding: 25px 20px 20px;
+    }
+    
+    .card-icon {
+        width: 70px;
+        height: 70px;
+        margin-bottom: 15px;
+    }
+    
+    .card-icon i {
+        font-size: 1.8rem;
+    }
+    
+    .card-header h3 {
+        font-size: 1.2rem;
+    }
+    
+    .card-content {
+        padding: 25px 20px;
+    }
+    
+    .roles-list li {
+        font-size: 0.9rem;
+        padding: 6px 0;
+    }
 }
 
 
@@ -313,6 +484,14 @@ body {
 .why-darmor {
     background-color: white;
     padding: 80px 0;
+}
+
+.why-darmor .section-title {
+    text-align: center;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #1f70c1;
+    margin-bottom: 60px;
 }
 
 .section-divider {
@@ -1054,8 +1233,39 @@ body {
     align-items: center;
     justify-content: center;
     margin: 0 auto 25px;
-    color: #023368;
+    color: #FFF700;
     font-size: 2rem;
+}
+
+.practice-icon i {
+    color: #FFF700 !important;
+    font-size: 2rem !important;
+}
+
+.practice-card .practice-icon i {
+    color: #FFF700 !important;
+    font-size: 2rem !important;
+}
+
+/* Aggressive override for Practice Groups page icons */
+.practice-groups-section .practice-card .practice-icon i.fas.fa-calculator,
+.practice-groups-section .practice-card .practice-icon i.fas.fa-briefcase,
+.practice-groups-section .practice-card .practice-icon i.fas.fa-chart-line,
+.practice-groups-section .practice-card .practice-icon i.fas.fa-database {
+    color: #FFF700 !important;
+    font-size: 2rem !important;
+}
+
+/* General override for all practice icon Font Awesome icons */
+.practice-groups-section .practice-icon i[class*="fa-"] {
+    color: #FFF700 !important;
+    font-size: 2rem !important;
+}
+
+/* Additional specificity */
+.practice-groups-section .practice-card .practice-icon i {
+    color: #FFF700 !important;
+    font-size: 2rem !important;
 }
 
 .practice-card h3 {
@@ -2180,6 +2390,15 @@ body {
         top: 100px !important;
     }
     
+    .hero-title {
+        font-size: 2.5rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 1.1rem;
+        margin-bottom: 30px;
+    }
+    
     .section-title {
         font-size: 28px;
     }
@@ -2521,4 +2740,15 @@ body {
         grid-template-columns: 1fr;
         gap: 20px;
     }
+}
+
+/* FINAL OVERRIDE - Must be at the end of CSS file */
+body .practice-groups-section .practice-card .practice-icon i {
+    color: #FFF700 !important;
+    font-size: 2rem !important;
+}
+
+body .practice-groups-section .practice-icon i[class*="fa-"] {
+    color: #FFF700 !important;
+    font-size: 2rem !important;
 }
