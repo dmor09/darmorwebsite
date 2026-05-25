@@ -2,148 +2,101 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="format-detection" content="telephone=no, email=no, address=no">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Practice Groups - Darmor Partners</title>
     <link rel="icon" type="image/png" href="images/Darmor-Partners-B7.png">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=7">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
-    <!-- Top Header -->
-    <div class="top-header">
-        <div class="top-header-content">
-            <div class="top-header-left">
-                <!-- Empty for now, can add contact info later -->
-            </div>
-            <div class="top-header-right">
-                <button class="talent-network-btn">Join Our Talent Network</button>
-                <div class="social-icons">
-                    <a href="https://www.facebook.com/darmorpartners" target="_blank" class="social-icon facebook">
-                        <i class="fab fa-facebook-f"></i>
-                    </a>
-                    <a href="https://twitter.com/darmorpartners" target="_blank" class="social-icon twitter">
-                        <i class="fab fa-twitter"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/darmor-partners" target="_blank" class="social-icon linkedin">
-                        <i class="fab fa-linkedin-in"></i>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </div>
 
     <!-- Navigation -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-brand">
-                <img src="images/Darmor-Partners-B1 copy (1).png" alt="Darmor Partners" class="logo-img">
+                <img src="images/Darmor-Partners-B1%20(1).svg" alt="Darmor Partners" class="logo-img">
             </div>
             <div class="nav-links">
                 <a href="index.html" class="nav-link">Home</a>
                 <a href="about.html" class="nav-link">About Us</a>
                 <a href="practice-groups.html" class="nav-link active">Practice Groups</a>
-                        <a href="industry-news.html" class="nav-link">Industry News</a>
+                <a href="industry-news.html" class="nav-link">Industry News</a>
                 <a href="contact.html" class="nav-link">Contact Us</a>
                 <a href="find-a-job.html" class="nav-link">Find a Job</a>
+            </div>
+            <div class="nav-actions">
+                <button class="talent-network-btn">Join Our Talent Network</button>
             </div>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero" style="background-image: url('images/pexels-pixabay-210592.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat;">
-        <div class="hero-content">
+    <section class="practice-hero">
+        <div class="hero-content" style="text-align: center;">
             <h1>Practice Groups</h1>
+            <p style="color: rgba(255,255,255,0.85); font-size: 1.15rem; margin-top: 12px;">Specialized recruitment across four core disciplines</p>
         </div>
     </section>
 
-    <!-- Practice Groups Section -->
-    <section id="practice-groups" class="practice-groups-section">
-        <div class="container">
-            <div class="practice-grid">
-                        <!-- Accounting & Finance -->
-                        <div class="practice-card">
-                            <div class="card-icon">
-                                <i class="fas fa-calculator"></i>
-                            </div>
-                            <h3>Accounting & Finance</h3>
-                            <a href="accounting-finance.html" class="learn-more-btn">Learn More</a>
-                        </div>
+    <!-- Practice Groups Grid -->
+    <section class="practice-groups" style="padding: 80px 40px;">
+        <div class="container" style="max-width: 1100px;">
+            <div class="practice-strip" style="grid-template-columns: repeat(2, 1fr); gap: 24px;">
 
-                        <!-- Human Resources -->
-                        <div class="practice-card">
-                            <div class="card-icon">
-                                <i class="fas fa-briefcase"></i>
-                            </div>
-                            <h3>Human Resources</h3>
-                            <a href="hr-recruitment.html" class="learn-more-btn">Learn More</a>
-                        </div>
+                <a href="accounting-finance.html" class="practice-strip-item" style="flex-direction: row; text-align: left; align-items: flex-start; gap: 20px; padding: 36px;">
+                    <div class="strip-icon" style="flex-shrink: 0;"><i class="fas fa-calculator"></i></div>
+                    <div>
+                        <p style="font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #1f70c1; margin: 0 0 6px;">Finance</p>
+                        <h3 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin: 0 0 10px;">Accounting & Finance</h3>
+                        <p style="font-size: 0.88rem; color: #6b7280; margin: 0 0 16px; line-height: 1.5;">Staff Accountants, Controllers, Financial Analysts, Tax Managers, FP&A, CPAs</p>
+                        <span class="strip-link">Explore roles <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
 
-                        <!-- Administrative & Sales -->
-                        <div class="practice-card">
-                            <div class="card-icon">
-                                <i class="fas fa-chart-line"></i>
-                            </div>
-                            <h3>Administrative & Sales</h3>
-                            <a href="administrative-sales.html" class="learn-more-btn">Learn More</a>
-                        </div>
+                <a href="hr-recruitment.html" class="practice-strip-item" style="flex-direction: row; text-align: left; align-items: flex-start; gap: 20px; padding: 36px;">
+                    <div class="strip-icon" style="flex-shrink: 0;"><i class="fas fa-users"></i></div>
+                    <div>
+                        <p style="font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #1f70c1; margin: 0 0 6px;">People</p>
+                        <h3 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin: 0 0 10px;">HR & Recruitment</h3>
+                        <p style="font-size: 0.88rem; color: #6b7280; margin: 0 0 16px; line-height: 1.5;">HRBPs, Talent Acquisition, Compensation, Employee Relations, L&D, Coordinators</p>
+                        <span class="strip-link">Explore roles <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
 
-                        <!-- Product & Technology -->
-                        <div class="practice-card">
-                            <div class="card-icon">
-                                <i class="fas fa-database"></i>
-                            </div>
-                            <h3>Product & Technology</h3>
-                            <a href="product-technology.html" class="learn-more-btn">Learn More</a>
-                        </div>
+                <a href="administrative-sales.html" class="practice-strip-item" style="flex-direction: row; text-align: left; align-items: flex-start; gap: 20px; padding: 36px;">
+                    <div class="strip-icon" style="flex-shrink: 0;"><i class="fas fa-handshake"></i></div>
+                    <div>
+                        <p style="font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #1f70c1; margin: 0 0 6px;">Sales</p>
+                        <h3 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin: 0 0 10px;">Administrative & Sales</h3>
+                        <p style="font-size: 0.88rem; color: #6b7280; margin: 0 0 16px; line-height: 1.5;">Account Executives, Account Managers, Customer Success, Solutions Consultants, Sales Managers</p>
+                        <span class="strip-link">Explore roles <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
+                <a href="product-technology.html" class="practice-strip-item" style="flex-direction: row; text-align: left; align-items: flex-start; gap: 20px; padding: 36px;">
+                    <div class="strip-icon" style="flex-shrink: 0;"><i class="fas fa-laptop-code"></i></div>
+                    <div>
+                        <p style="font-size: 0.72rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; color: #1f70c1; margin: 0 0 6px;">Technology</p>
+                        <h3 style="font-size: 1.2rem; font-weight: 700; color: #0f172a; margin: 0 0 10px;">Product & Technology</h3>
+                        <p style="font-size: 0.88rem; color: #6b7280; margin: 0 0 16px; line-height: 1.5;">Product Managers, Software Engineers, AI & ML Engineers, Data Scientists</p>
+                        <span class="strip-link">Explore roles <i class="fas fa-arrow-right"></i></span>
+                    </div>
+                </a>
+
             </div>
         </div>
     </section>
 
-    <!-- Job Seekers & Employers Section -->
-    <section class="job-seekers-employers">
-        <div class="container">
-            <div class="two-column-layout">
-                <!-- Job Seekers -->
-                <div class="column job-seekers">
-                    <h2>Job Seekers</h2>
-                    <div class="gradient-line"></div>
-                    <p>Looking for new career opportunities? Let's Discuss</p>
-                    <div class="cta-buttons">
-                        <button class="main-btn">Join Our Talent Network</button>
-                        <button class="arrow-btn">
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Central Separator -->
-                <div class="vertical-separator"></div>
-
-                <!-- Employers -->
-                <div class="column employers">
-                    <h2>Employers</h2>
-                    <div class="gradient-line"></div>
-                    <p>Looking to hire? Let us provide you talent</p>
-                    <div class="cta-buttons">
-                        <button class="main-btn">Contact Us</button>
-                        <button class="arrow-btn">
-                            <i class="fas fa-arrow-right"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
+    <!-- Job Seekers & Employers -->
     <section class="cta-section">
         <div class="container">
-            <h2>Ready to Find Your Next Hire?</h2>
-            <p>Let our specialized practice groups help you find the perfect candidate for your team.</p>
+            <h2>Ready to Make Your Next Great Hire?</h2>
+            <p>Whether you're building a team or looking for your next opportunity, we're here to help.</p>
             <div class="cta-buttons">
-                <a href="index.html#contact" class="cta-button">Get Started</a>
-                <a href="about.html" class="cta-button secondary">Learn More</a>
+                <a href="contact.html" class="cta-btn-primary">I'm an Employer</a>
+                <a href="find-a-job.html" class="cta-btn-outline">I'm a Job Seeker</a>
             </div>
         </div>
     </section>
@@ -154,20 +107,20 @@
             <div class="footer-content">
                 <div class="footer-column">
                     <div class="logo">
-                        <img src="images/Darmor-Partners-B1 (1).svg" alt="Darmor Partners" class="footer-logo">
+                        <img src="images/Darmor-Partners-B1%20(1).svg" alt="Darmor Partners" class="footer-logo">
                     </div>
-                    <p>Connecting exceptional talent with outstanding companies across diverse industries and functions.</p>
+                    <p>Darmor Partners is a leading recruitment firm specializing in contingent staffing solutions and direct hire placements.</p>
+                    <p>Darmor Partners is an equal opportunity employer</p>
+                    <a href="#" class="privacy-link">Privacy Policy</a>
                 </div>
-                
                 <div class="footer-column">
-                    <h4>Quick Links</h4>
-                    <ul>
+                    <h4>Pages</h4>
+                    <ul class="footer-links">
                         <li><a href="index.html">Home</a></li>
                         <li><a href="about.html">About Us</a></li>
                         <li><a href="practice-groups.html">Practice Groups</a></li>
-                        <li><a href="index.html#contact">Contact Us</a></li>
-                        <li><a href="#">Career Resources</a></li>
-                        <li><a href="#">Submit Your Resume</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                        <li><a href="find-a-job.html">Find a Job</a></li>
                     </ul>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/darmorpartners" target="_blank"><i class="fab fa-facebook-f"></i></a>
@@ -175,7 +128,6 @@
                         <a href="https://twitter.com/darmorpartners" target="_blank"><i class="fab fa-twitter"></i></a>
                     </div>
                 </div>
-                
                 <div class="footer-column">
                     <h4>Join Our Mailing List</h4>
                     <form class="mailing-form" action="https://formspree.io/f/mvgwkkyg" method="POST">
@@ -183,10 +135,12 @@
                         <input type="email" name="email" placeholder="Your E-mail Address" required>
                         <button type="submit">Get in Touch</button>
                     </form>
+                    <div class="contact-info">
+                        <p>For all inquiries, please reach us at:</p>
+                        <p>Phone: 646-229-6278</p>
+                        <p>Email: info@darmorpartners.com</p>
+                    </div>
                 </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Darmor Partners. All rights reserved.</p>
             </div>
         </div>
     </footer>

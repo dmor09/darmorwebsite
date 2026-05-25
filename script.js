@@ -14,6 +14,16 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
+    // Navbar scroll effect
+    const navbar = document.querySelector('.navbar');
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 20) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    });
+
     // Navigation active state
     const navLinks = document.querySelectorAll('.nav-link');
     const sections = document.querySelectorAll('section');
@@ -126,16 +136,6 @@ document.addEventListener('DOMContentLoaded', function() {
             document.body.style.opacity = '1';
         }, 100);
     });
-
-    // Parallax effect for hero section
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        window.addEventListener('scroll', function() {
-            const scrolled = window.pageYOffset;
-            const rate = scrolled * -0.5;
-            hero.style.transform = `translateY(${rate}px)`;
-        });
-    }
 
     // Add click effects to buttons
     const buttons = document.querySelectorAll('button');
