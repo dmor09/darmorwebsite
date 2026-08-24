@@ -85,6 +85,9 @@ body[data-page="home"] .site-header:not(.scrolled) .logo-crop img,
 .button-ghost:hover { border-color: rgba(255,255,255,.65); background: rgba(255,255,255,.08); }
 .button-light { color: var(--ink); background: white; }
 .button-outline-light { color: white; border-color: rgba(255,255,255,.35); }
+.arrow-icon { width: 12px; height: 12px; display: inline-block; position: relative; flex: 0 0 12px; color: currentColor; vertical-align: -.08em; }
+.arrow-icon:before { content: ""; width: 12px; height: 1.5px; position: absolute; left: 0; top: 5px; border-radius: 2px; background: currentColor; transform: rotate(-45deg); }
+.arrow-icon:after { content: ""; width: 6px; height: 6px; position: absolute; right: 0; top: 0; border-top: 1.5px solid currentColor; border-right: 1.5px solid currentColor; }
 .hero-proof { margin-top: 42px; display: flex; align-items: center; gap: 14px; }
 .hero-proof p { margin: 0; color: rgba(255,255,255,.48); font-size: 11px; line-height: 1.5; letter-spacing: .02em; }
 .hero-proof b { color: rgba(255,255,255,.86); font-weight: 500; }
@@ -112,9 +115,9 @@ body[data-page="home"] .site-header:not(.scrolled) .logo-crop img,
 .orbit-node { position: absolute; z-index: 3; display: flex; align-items: center; gap: 9px; color: rgba(255,255,255,.72); font-size: 10px; text-transform: uppercase; letter-spacing: .1em; }
 .orbit-node i { width: 13px; height: 13px; display: block; border: 2px solid var(--aqua); border-radius: 50%; background: var(--navy); box-shadow: 0 0 16px rgba(121,232,255,.5); }
 .node-engineering { top: 11%; left: 14%; }
-.node-product { top: 23%; right: 1%; }
+.node-product { top: 23%; right: 1%; flex-direction: row-reverse; }
 .node-ai { bottom: 10%; left: 13%; }
-.node-data { right: 5%; bottom: 23%; }
+.node-data { right: 5%; bottom: 23%; flex-direction: row-reverse; }
 .orbit-caption { position: absolute; right: 0; bottom: -4px; width: 210px; color: rgba(255,255,255,.32); font-size: 10px; line-height: 1.6; }
 
 .signal-strip { height: 64px; display: flex; align-items: center; overflow: hidden; border-bottom: 1px solid var(--line); background: white; }
@@ -444,13 +447,17 @@ body[data-page="home"] .site-header:not(.scrolled) .logo-crop img,
   .nav-cta { margin-top: auto; color: white !important; background: var(--blue) !important; justify-content: space-between; }
   .site-header:has(.site-nav.open) { color: white !important; background: transparent !important; box-shadow: none !important; }
   .hero-home { min-height: 800px; height: auto; }
-  .hero-inner { min-height: 800px; padding: 125px 0 80px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
+  .hero-inner { min-height: 800px; padding: 125px 0 70px; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; }
   .hero h1 { font-size: clamp(49px, 15vw, 68px); }
   .hero-lede { font-size: 16px; }
   .hero-actions { align-items: stretch; }
   .button { min-height: 52px; }
-  .orbit-system { position: absolute; width: 430px; right: -225px; top: 175px; opacity: .34; }
-  .orbit-node span, .orbit-caption { display: none; }
+  .orbit-system { width: min(86vw, 330px); position: relative; right: auto; top: auto; align-self: center; margin: 38px auto 0; opacity: .82; }
+  .orbit-node { gap: 6px; font-size: 8px; }
+  .orbit-node i { width: 10px; height: 10px; }
+  .orbit-core { width: 94px; height: 94px; }
+  .core-arrow { width: 33px; height: 53px; }
+  .orbit-caption { display: none; }
   .orbit-core small { display: none; }
   .hero-copy { z-index: 2; }
   .hero-proof { margin-top: 32px; }
