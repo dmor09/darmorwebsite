@@ -250,12 +250,14 @@
         point.y += (targetY - point.y) * (reducedMotion ? 1 : .12);
 
         ctx.beginPath();
-        const baseRadius = this.theme === 'blue' ? 1.45 : .8;
+        const baseRadius = this.theme === 'blue' ? 1.45 : this.theme === 'white' ? 1 : .8;
         ctx.arc(point.x, point.y, baseRadius + influence * 2.15 + ambient * .65, 0, Math.PI * 2);
         const alpha = .075 + influence * .72 + ambient * .15;
         ctx.fillStyle = this.theme === 'blue'
           ? `rgba(20,108,255,${Math.min(1, .34 + alpha)})`
-          : `rgba(121,232,255,${alpha})`;
+          : this.theme === 'white'
+            ? `rgba(255,255,255,${Math.min(.42, .045 + alpha * .5)})`
+            : `rgba(121,232,255,${alpha})`;
         ctx.fill();
       });
 
@@ -285,6 +287,7 @@
       this.cityIndex = 0;
       this.rotation = this.cities[0].lon;
       this.targetRotation = this.rotation;
+      this.viewLatitude = 32;
       this.dragging = false;
       this.lastX = 0;
       this.arrow = new Image();
@@ -381,11 +384,16 @@
     project(lat, lon) {
       const phi = lat * Math.PI / 180;
       const lambda = (lon - this.rotation) * Math.PI / 180;
+      const viewPhi = this.viewLatitude * Math.PI / 180;
       const cosPhi = Math.cos(phi);
+      const sinPhi = Math.sin(phi);
+      const cosViewPhi = Math.cos(viewPhi);
+      const sinViewPhi = Math.sin(viewPhi);
+      const cosLambda = Math.cos(lambda);
       return {
         x: this.centerX + this.radius * cosPhi * Math.sin(lambda),
-        y: this.centerY - this.radius * Math.sin(phi),
-        z: cosPhi * Math.cos(lambda)
+        y: this.centerY - this.radius * (cosViewPhi * sinPhi - sinViewPhi * cosPhi * cosLambda),
+        z: sinViewPhi * sinPhi + cosViewPhi * cosPhi * cosLambda
       };
     }
 
@@ -553,6 +561,20 @@
     const serviceSlides = [...servicesCarousel.querySelectorAll('[data-service-slide]')];
     const serviceDots = [...servicesCarousel.querySelectorAll('[data-service-dot]')];
     let activeService = 0;
+    let serviceTimer = null;
+    let carouselVisible = false;
+    let carouselPaused = false;
+
+    const stopServiceAutoplay = () => {
+      window.clearInterval(serviceTimer);
+      serviceTimer = null;
+    };
+
+    const startServiceAutoplay = () => {
+      stopServiceAutoplay();
+      if (reducedMotion || !carouselVisible || carouselPaused || document.hidden) return;
+      serviceTimer = window.setInterval(() => showService(activeService + 1), 4800);
+    };
 
     const showService = index => {
       activeService = (index + serviceSlides.length) % serviceSlides.length;
@@ -578,9 +600,39 @@
         showService(index);
       });
     });
-    serviceDots.forEach((dot, index) => dot.addEventListener('click', () => showService(index)));
-    servicesCarousel.querySelector('[data-service-prev]').addEventListener('click', () => showService(activeService - 1));
-    servicesCarousel.querySelector('[data-service-next]').addEventListener('click', () => showService(activeService + 1));
+    const selectService = index => {
+      showService(index);
+      startServiceAutoplay();
+    };
+
+    serviceDots.forEach((dot, index) => dot.addEventListener('click', () => selectService(index)));
+    servicesCarousel.querySelector('[data-service-prev]').addEventListener('click', () => selectService(activeService - 1));
+    servicesCarousel.querySelector('[data-service-next]').addEventListener('click', () => selectService(activeService + 1));
+
+    servicesCarousel.addEventListener('mouseenter', () => {
+      carouselPaused = true;
+      stopServiceAutoplay();
+    });
+    servicesCarousel.addEventListener('mouseleave', () => {
+      carouselPaused = false;
+      startServiceAutoplay();
+    });
+    servicesCarousel.addEventListener('focusin', () => {
+      carouselPaused = true;
+      stopServiceAutoplay();
+    });
+    servicesCarousel.addEventListener('focusout', event => {
+      if (servicesCarousel.contains(event.relatedTarget)) return;
+      carouselPaused = false;
+      startServiceAutoplay();
+    });
+    document.addEventListener('visibilitychange', startServiceAutoplay);
+
+    new IntersectionObserver(entries => {
+      carouselVisible = entries[0].isIntersecting;
+      if (carouselVisible) startServiceAutoplay();
+      else stopServiceAutoplay();
+    }, { threshold: .25 }).observe(servicesCarousel);
     showService(0);
   }
 
