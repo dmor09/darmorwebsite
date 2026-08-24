@@ -1,275 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="format-detection" content="telephone=no, email=no, address=no">
-    <title>Darmor Partners - Leading Recruitment Firm</title>
-    <link rel="icon" type="image/png" href="images/Darmor-Partners-B7.png">
-    <link rel="stylesheet" href="styles.css?v=6">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Darmor Partners connects ambitious technology companies with exceptional engineering, product, data, and AI talent.">
+  <meta name="theme-color" content="#071a3d">
+  <title>Darmor Partners | Talent for What’s Next</title>
+  <link rel="icon" type="image/png" href="images/Darmor-Partners-B7.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Sora:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=27">
 </head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="nav-container">
-            <div class="nav-brand">
-                <img src="images/Darmor-Partners-B1%20(1).svg" alt="Darmor Partners" class="logo-img">
-            </div>
-            <div class="nav-links">
-                <a href="#" class="nav-link active">Home</a>
-                <a href="about.html" class="nav-link">About Us</a>
-                <a href="practice-groups.html" class="nav-link">Practice Groups</a>
-                <a href="industry-news.html" class="nav-link">Industry News</a>
-                <a href="contact.html" class="nav-link">Contact Us</a>
-                <a href="find-a-job.html" class="nav-link">Find a Job</a>
-            </div>
-            <div class="nav-actions">
-                <button class="talent-network-btn">Join Our Talent Network</button>
-            </div>
-        </div>
+<body data-page="home">
+  <div class="pixel-intro" data-pixel-intro aria-hidden="true">
+    <canvas></canvas>
+    <div class="pixel-intro-brand">
+      <span class="logo-crop"><img src="images/Darmor-Partners-B1%20(1).svg" alt=""></span>
+      <span>Talent for what’s next</span>
+    </div>
+  </div>
+  <header class="site-header" data-header>
+    <a class="brand" href="index.html" aria-label="Darmor Partners home"><span class="logo-crop"><img src="images/Darmor-Partners-B1%20(1).svg" alt="Darmor Partners"></span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" data-menu-toggle>
+      <span></span><span></span>
+    </button>
+    <nav class="site-nav" aria-label="Main navigation" data-menu>
+      <a class="active" href="index.html">Home</a>
+      <a href="practice-groups.html">Expertise</a>
+      <a href="about.html">Our approach</a>
+      <a href="contact.html">Contact</a>
+      <a class="nav-cta" href="contact.html?path=employer">Build your team <span>↗</span></a>
     </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <video class="hero-video" autoplay muted loop playsinline>
-            <source src="images/hero.mp4" type="video/mp4">
-            <source src="images/5656146-uhd_3840_2160_24fps.mov" type="video/mp4">
-        </video>
-        <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="hero-title">We Connect Ambition with Opportunity</h1>
-            <p class="hero-subtitle">Connecting top talent with exceptional opportunities across specialized industries</p>
-            <button class="cta-button">Explore Practice Groups</button>
+  <main>
+    <section class="hero hero-home">
+      <canvas class="particle-canvas" data-particles data-particle-mode="field" aria-hidden="true"></canvas>
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <div class="hero-copy reveal">
+          <p class="eyebrow"><span class="live-dot"></span> Technology recruiting, re-engineered</p>
+          <h1>Connecting companies to the people who build <span>what’s next.</span></h1>
+          <div class="hero-actions">
+            <a class="button button-primary" href="contact.html?path=employer">Find exceptional talent <span>↗</span></a>
+            <a class="button button-ghost" href="contact.html?path=talent">Explore your next move</a>
+          </div>
+          <div class="hero-proof">
+            <div class="placement-badge"><strong>500+</strong><span>placements</span></div>
+            <p><b>Proven search experience</b><br>from emerging teams to Fortune 500s</p>
+          </div>
         </div>
+
+        <div class="orbit-system reveal reveal-delay" aria-label="Our focus areas">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+          <div class="orbit-core">
+            <span class="core-pulse"></span>
+            <img class="core-arrow" src="images/darmor-arrow-white.svg" alt="" aria-hidden="true">
+            <small>the right<br>connection</small>
+          </div>
+          <div class="orbit-node node-engineering"><i></i><span>Engineering</span></div>
+          <div class="orbit-node node-product"><i></i><span>Product</span></div>
+          <div class="orbit-node node-ai"><i></i><span>AI research</span></div>
+          <div class="orbit-node node-data"><i></i><span>Data</span></div>
+          <p class="orbit-caption">Every transformative team starts with one meaningful connection.</p>
+        </div>
+      </div>
+      <a class="scroll-cue" href="#expertise" aria-label="Scroll to expertise"><span></span> Discover</a>
     </section>
 
-    <!-- Stats Bar -->
-    <section class="stats-bar">
-        <div class="stats-grid">
-            <div class="stat-item">
-                <span class="stat-num">500+</span>
-                <span class="stat-lbl">Placements Made</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-num">4</span>
-                <span class="stat-lbl">Practice Groups</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-num">95%</span>
-                <span class="stat-lbl">Client Retention</span>
-            </div>
-            <div class="stat-item">
-                <span class="stat-num">10+</span>
-                <span class="stat-lbl">Industries Served</span>
-            </div>
-        </div>
+    <section class="signal-strip" aria-label="Darmor Partners highlights">
+      <div class="ticker">
+        <span>Human insight</span><i></i><span>Technical fluency</span><i></i><span>Deep networks</span><i></i><span>Search built around you</span><i></i><span>Human insight</span><i></i><span>Technical fluency</span>
+      </div>
     </section>
 
-    <!-- Why Darmor Partners Section -->
-    <section class="why-darmor">
-        <div class="container">
-            <h2 class="section-title">Why Darmor Partners?</h2>
-            <div class="features-grid">
-                <div class="feature-block">
-                    <div class="feature-icon">
-                        <i class="fas fa-balance-scale"></i>
-                    </div>
-                    <h3>Flexibility</h3>
-                    <p>We work with companies of all sizes and understand the financial flexibility some businesses need</p>
-                </div>
-
-                <div class="feature-block">
-                    <div class="feature-icon">
-                        <i class="fas fa-lightbulb"></i>
-                    </div>
-                    <h3>Knowledge</h3>
-                    <p>We take pride in staying informed on hiring and market trends. It helps us build credibility and value for our clients and candidates</p>
-                </div>
-
-                <div class="feature-block">
-                    <div class="feature-icon">
-                        <i class="fas fa-drafting-compass"></i>
-                    </div>
-                    <h3>Tailored</h3>
-                    <p>No two searches are the same. We take a tailored approach for every search we take on</p>
-                </div>
-
-                <div class="feature-block">
-                    <div class="feature-icon">
-                        <i class="fas fa-users"></i>
-                    </div>
-                    <h3>Talent Network</h3>
-                    <p>Our extensive & diverse talent pool of passive candidates ensures we find the right fit for your organization</p>
-                </div>
-
-                <div class="feature-block">
-                    <div class="feature-icon">
-                        <i class="fas fa-robot"></i>
-                    </div>
-                    <h3>Automation</h3>
-                    <p>Our cutting-edge ATS allows our team to send you qualified candidates faster than ever before</p>
-                </div>
-            </div>
-        </div>
+    <section class="section expertise-preview" id="expertise">
+      <div class="section-heading reveal">
+        <p class="eyebrow eyebrow-blue">Where we go deep</p>
+        <h2>Built for the teams shaping tomorrow.</h2>
+        <p>We help companies find exceptional engineering, product, AI, and data talent—from high-impact builders to transformative leaders.</p>
+      </div>
+      <div class="expertise-grid">
+        <a class="expertise-card reveal" href="practice-groups.html#engineering">
+          <span class="card-index">01</span>
+          <svg class="focus-icon" viewBox="0 0 72 56" aria-hidden="true"><circle cx="11" cy="12" r="5"></circle><circle cx="61" cy="44" r="5"></circle><path d="M16 15l12 8m16 10 12 8M30 14l-9 14 9 14m12-28 9 14-9 14"></path></svg>
+          <h3>Software Engineering</h3>
+          <p>From high-leverage individual contributors to the leaders building world-class technical organizations.</p>
+          <ul><li>Staff & Principal Engineers</li><li>Engineering Leadership</li><li>Security & Cloud</li></ul>
+          <span class="text-link">Explore engineering <b>↗</b></span>
+        </a>
+        <a class="expertise-card reveal reveal-delay-1" href="practice-groups.html#product">
+          <span class="card-index">02</span>
+          <svg class="focus-icon" viewBox="0 0 72 56" aria-hidden="true"><circle cx="36" cy="28" r="8"></circle><circle cx="36" cy="28" r="18"></circle><circle cx="36" cy="5" r="4"></circle><circle cx="62" cy="28" r="4"></circle><path d="M36 9v11m8 8h14"></path></svg>
+          <h3>Product Leadership</h3>
+          <p>Product minds who can turn market insight, user empathy, and technical possibility into momentum.</p>
+          <ul><li>Product Management</li><li>Product Design</li><li>Product Leadership</li></ul>
+          <span class="text-link">Explore product <b>↗</b></span>
+        </a>
+        <a class="expertise-card reveal reveal-delay-2" href="practice-groups.html#ai">
+          <span class="card-index">03</span>
+          <svg class="focus-icon" viewBox="0 0 72 56" aria-hidden="true"><circle cx="10" cy="28" r="4"></circle><circle cx="31" cy="10" r="4"></circle><circle cx="31" cy="46" r="4"></circle><circle cx="61" cy="16" r="4"></circle><circle cx="61" cy="40" r="4"></circle><path d="M13 25l15-12m-15 18 15 12m7-31 22 4M35 44l22-4M35 13l22 25M35 43l22-25"></path></svg>
+          <h3>AI & Research</h3>
+          <p>Scarce technical talent working at the edge of machine intelligence and applied research.</p>
+          <ul><li>Research Scientists</li><li>ML & AI Engineers</li><li>Applied AI Leadership</li></ul>
+          <span class="text-link">Explore AI & research <b>↗</b></span>
+        </a>
+        <a class="expertise-card reveal reveal-delay-3" href="practice-groups.html#data">
+          <span class="card-index">04</span>
+          <svg class="focus-icon" viewBox="0 0 72 56" aria-hidden="true"><ellipse cx="36" cy="11" rx="22" ry="7"></ellipse><path d="M14 11v14c0 4 10 7 22 7s22-3 22-7V11M14 25v14c0 4 10 7 22 7s22-3 22-7V25"></path><circle cx="63" cy="43" r="4"></circle><path d="M55 40l4 2"></path></svg>
+          <h3>Data & Infrastructure</h3>
+          <p>The architects, builders, and leaders who turn information and infrastructure into durable advantage.</p>
+          <ul><li>Data Science & Engineering</li><li>Platform & Infrastructure</li><li>DevOps & SRE</li></ul>
+          <span class="text-link">Explore data <b>↗</b></span>
+        </a>
+      </div>
     </section>
 
-    <!-- Practice Groups Section -->
-    <section class="practice-groups">
-        <div class="container">
-            <h2 class="section-title">Practice Groups</h2>
-            <p class="section-subtitle">Specialized recruitment across four core disciplines</p>
-            <div class="practice-strip">
-                <a href="accounting-finance.html" class="practice-strip-item">
-                    <div class="strip-icon"><i class="fas fa-calculator"></i></div>
-                    <h3>Accounting & Finance</h3>
-                    <span class="strip-link">Explore roles <i class="fas fa-arrow-right"></i></span>
-                </a>
-                <a href="hr-recruitment.html" class="practice-strip-item">
-                    <div class="strip-icon"><i class="fas fa-users"></i></div>
-                    <h3>HR & Recruitment</h3>
-                    <span class="strip-link">Explore roles <i class="fas fa-arrow-right"></i></span>
-                </a>
-                <a href="administrative-sales.html" class="practice-strip-item">
-                    <div class="strip-icon"><i class="fas fa-handshake"></i></div>
-                    <h3>Administrative & Sales</h3>
-                    <span class="strip-link">Explore roles <i class="fas fa-arrow-right"></i></span>
-                </a>
-                <a href="product-technology.html" class="practice-strip-item">
-                    <div class="strip-icon"><i class="fas fa-laptop-code"></i></div>
-                    <h3>Product & Technology</h3>
-                    <span class="strip-link">Explore roles <i class="fas fa-arrow-right"></i></span>
-                </a>
+    <section class="section dark-section" id="services">
+      <div class="molecule-field molecule-field-left" aria-hidden="true"></div>
+      <div class="services-showcase" data-services-carousel>
+        <div class="services-intro reveal">
+          <p class="eyebrow">How we can help</p>
+          <h2>Search with the rigor your team deserves.</h2>
+          <p>Choose an engagement model to explore how we can support your next hire.</p>
+          <div class="service-carousel-controls">
+            <button type="button" aria-label="Previous service" data-service-prev>←</button>
+            <div class="service-dots" aria-label="Choose a service">
+              <button class="active" type="button" aria-label="Direct hire" data-service-dot="0"></button>
+              <button type="button" aria-label="Executive search" data-service-dot="1"></button>
+              <button type="button" aria-label="Contract talent" data-service-dot="2"></button>
+              <button type="button" aria-label="Contract-to-hire" data-service-dot="3"></button>
             </div>
+            <button type="button" aria-label="Next service" data-service-next>→</button>
+          </div>
         </div>
+        <div class="service-stack reveal reveal-delay-1">
+          <article class="service-slide active" data-service-slide="0" tabindex="0">
+            <span class="service-slide-number">01 · PERMANENT</span><h3>Direct hire</h3>
+            <p>Focused, end-to-end search for high-impact individual contributors and leaders precisely matched to your team.</p>
+            <div><small>Best for</small><strong>Business-critical hires · Team builders</strong></div>
+            <a href="contact.html?path=employer">Start a direct hire search <b>↗</b></a>
+          </article>
+          <article class="service-slide" data-service-slide="1" tabindex="0">
+            <span class="service-slide-number">02 · LEADERSHIP</span><h3>Executive search</h3>
+            <p>Discreet, research-led search for executives who can align organizations, build trust, and accelerate impact.</p>
+            <div><small>Best for</small><strong>VP &amp; C-suite · Transformative leadership</strong></div>
+            <a href="contact.html?path=employer">Begin an executive search <b>↗</b></a>
+          </article>
+          <article class="service-slide" data-service-slide="2" tabindex="0">
+            <span class="service-slide-number">03 · FLEXIBLE</span><h3>Contract talent</h3>
+            <p>High-caliber specialists ready to add expertise and momentum to urgent priorities and evolving workloads.</p>
+            <div><small>Best for</small><strong>Priority projects · Interim expertise</strong></div>
+            <a href="contact.html?path=employer">Add contract talent <b>↗</b></a>
+          </article>
+          <article class="service-slide" data-service-slide="3" tabindex="0">
+            <span class="service-slide-number">04 · ADAPTIVE</span><h3>Contract-to-hire</h3>
+            <p>Bring in proven talent now while giving both sides real working context to assess a lasting fit.</p>
+            <div><small>Best for</small><strong>Immediate needs · Confident decisions</strong></div>
+            <a href="contact.html?path=employer">Explore contract-to-hire <b>↗</b></a>
+          </article>
+        </div>
+      </div>
     </section>
 
-    <!-- Testimonials Section -->
-    <section class="testimonials">
-        <div class="container">
-            <h2 class="section-title testimonials-title">What Our Clients Say</h2>
-            <div class="testimonials-grid">
-                <div class="testimonial-quote">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p>"Darmor Partners takes pride in their process. They listen to your specific requirements and they tailor the job search to you. Not a one size fits all approach. I felt like they were our partners in finding the right opportunity."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">VO</div>
-                        <div class="author-info">
-                            <strong>VP of Operations</strong>
-                            <span>Regional Manufacturing Company</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-block">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p>"I truly appreciate the Darmor Team taking the time to visit our office and meet with our team members. Their approach made the experience smooth and collaborative, and they did a fantastic job overall."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">HT</div>
-                        <div class="author-info">
-                            <strong>Head of Talent Acquisition</strong>
-                            <span>Global SaaS Company</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="testimonial-block">
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                    </div>
-                    <p>"Darmor Partners provided flexible terms that aligned perfectly with our financial situation. Two of the exceptional employees we hired through them are still thriving on our team today."</p>
-                    <div class="testimonial-author">
-                        <div class="author-avatar">CE</div>
-                        <div class="author-info">
-                            <strong>CEO</strong>
-                            <span>Online Retail Startup</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <section class="section impact-section">
+      <div class="impact-intro reveal">
+        <p class="eyebrow eyebrow-blue">The Darmor difference</p>
+        <h2>High-touch by design.<br>High-impact by result.</h2>
+        <p>We combine the reach of a modern search operation with the judgment and attention of a true partner.</p>
+      </div>
+      <div class="impact-stats">
+        <div class="stat reveal"><strong data-count="500" data-suffix="+">500+</strong><span>successful placements</span></div>
+        <div class="stat reveal reveal-delay-1"><strong data-count="95" data-suffix="%">95%</strong><span>client retention</span></div>
+        <div class="stat reveal reveal-delay-2"><strong data-count="50" data-suffix="+">50+</strong><span>companies supported</span></div>
+        <div class="stat reveal reveal-delay-3"><strong>2019</strong><span>founded in New York</span></div>
+      </div>
     </section>
 
-    <!-- CTA Section -->
-    <section class="cta-section">
-        <div class="container">
-            <h2>Ready to Make Your Next Great Hire?</h2>
-            <p>Whether you're building a team or looking for your next opportunity, we're here to help.</p>
-            <div class="cta-buttons">
-                <a href="contact.html" class="cta-btn-primary">I'm an Employer</a>
-                <a href="find-a-job.html" class="cta-btn-outline">I'm a Job Seeker</a>
-            </div>
-        </div>
+    <section class="global-reach-section" id="global-reach">
+      <div class="global-reach-copy reveal">
+        <p class="eyebrow">Beyond borders</p>
+        <h2>Global reach.</h2>
+        <p class="global-reach-lede">Placements across multiple geographies.</p>
+        <p>From established technology hubs to emerging talent markets, our search network moves wherever the right person is.</p>
+        <div class="global-city-list" aria-label="Cities in our placement network"><span>New York</span><span>Paris</span><span>London</span><span>Amsterdam</span><span>San Francisco</span><span>Los Angeles</span><span>Seattle</span><span>Miami</span><span>Austin</span><span>Mexico City</span></div>
+      </div>
+      <div class="globe-stage reveal reveal-delay-1">
+        <canvas class="globe-wireframe" data-globe-wireframe aria-label="Rotating globe showing Darmor Partners placement locations"></canvas>
+        <div class="globe-status"><span class="live-dot"></span><span data-globe-city>New York</span><small>Placement network</small></div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-column">
-                    <div class="logo">
-                        <img src="images/Darmor-Partners-B1%20(1).svg" alt="Darmor Partners" class="footer-logo">
-                    </div>
-                    <p>Darmor Partners is a leading recruitment firm specializing in contingent staffing solutions and direct hire placements. Regardless if you are a professional looking for your next opportunity or an employer looking for specialized recruitment services, contact us today to see how we can help.</p>
-                    <p>Darmor Partners is an equal opportunity employer</p>
-                    <a href="#" class="privacy-link">Privacy Policy</a>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Pages</h4>
-                    <ul class="footer-links">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="practice-groups.html">Practice Groups</a></li>
-                        <li><a href="index.html#contact">Contact Us</a></li>
-                        <li><a href="#">Find a Job</a></li>
-                        <li><a href="#">Submit Your Resume</a></li>
-                    </ul>
-                    <div class="social-icons">
-                        <a href="https://www.facebook.com/darmorpartners" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                        <a href="https://www.linkedin.com/company/darmor-partners" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="https://twitter.com/darmorpartners" target="_blank"><i class="fab fa-twitter"></i></a>
-                    </div>
-                </div>
-                
-                <div class="footer-column">
-                    <h4>Join Our Mailing List</h4>
-                    <form class="mailing-form" action="https://formspree.io/f/mvgwkkyg" method="POST">
-                        <input type="text" name="name" placeholder="Your Full Name" required>
-                        <input type="email" name="email" placeholder="Your E-mail Address" required>
-                        <button type="submit">Get in Touch</button>
-                    </form>
-                    <div class="contact-info">
-                        <p>For all inquiries, please reach us at:</p>
-                        <p>Phone: 646-229-6278</p>
-                        <p>Email: info@darmorpartners.com</p>
-                    </div>
-                </div>
-            </div>
+    <section class="connection-cta home-final-cta" id="contact-cta">
+      <canvas class="dot-field-canvas final-dot-field" data-dot-field data-dot-theme="blue" aria-hidden="true"></canvas>
+      <div class="connection-content reveal">
+        <p class="eyebrow">Make the right connection</p>
+        <h2>Your next breakthrough<br>starts with the right person.</h2>
+        <div class="hero-actions">
+          <a class="button button-light hyperlink-button" href="contact.html?path=employer"><span class="hyperlink-label">Build your team<span class="hyperlink-underline" aria-hidden="true"></span></span><span class="button-arrow" aria-hidden="true">↗</span></a>
+          <a class="button button-outline-light hyperlink-button" href="contact.html?path=talent"><span class="hyperlink-label">Join our talent network<span class="hyperlink-underline" aria-hidden="true"></span></span></a>
         </div>
-    </footer>
+      </div>
+    </section>
+  </main>
 
-    <script src="script.js"></script>
-    <script>
-        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
-    </script>
-    <script defer src="/_vercel/insights/script.js"></script>
+  <footer class="site-footer">
+    <div class="footer-main">
+      <div>
+        <a class="brand brand-light" href="index.html"><span class="logo-crop"><img src="images/Darmor-Partners-B1%20(1).svg" alt="Darmor Partners"></span></a>
+        <p>Specialized search for the people building what’s next.</p>
+      </div>
+      <div class="footer-links"><span>Navigate</span><a href="practice-groups.html">Expertise</a><a href="about.html">Our approach</a><a href="contact.html">Contact</a></div>
+      <div class="footer-links"><span>Connect</span><a href="mailto:info@darmorpartners.com">info@darmorpartners.com</a><a href="tel:+16462296278">646.229.6278</a><a href="https://www.linkedin.com/company/darmor-partners" target="_blank" rel="noreferrer">LinkedIn ↗</a></div>
+      <div class="footer-action"><span>Ready to talk?</span><a href="contact.html">Start a conversation <b>↗</b></a></div>
+    </div>
+    <div class="footer-bottom"><span>© <span data-year></span> Darmor Partners</span><span>New York · Nationwide</span><span>Equal opportunity employer</span></div>
+  </footer>
+
+  <script src="script.js?v=27"></script>
+  <script>window.va=window.va||function(){(window.vaq=window.vaq||[]).push(arguments)};</script>
+  <script defer src="/_vercel/insights/script.js"></script>
 </body>
 </html>
